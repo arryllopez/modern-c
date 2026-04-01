@@ -47,3 +47,18 @@ int main(int argc, [[maybe_unused]] char* argv[argc+1]) {
 
   // exit_sucess is basically return 0, but it is more explicit and can be used to indicate successful termination of the program
   return EXIT_SUCCESS;                                 
+
+
+int main(int argc, char* argv[argc+1]) { 
+    puts ("Hello, World!"); // puts is a function that writes a string to the standard output followed by a newline character
+    if (argc > 1) { // checks if there are more than 1 command-line arguments (the first argument is the program name itself)
+        while(true) { 
+            puts ("some programs neever stop"); 
+        } 
+    } else { 
+        do { 
+            puts ("but this one does"); 
+        } while(false);
+    }
+    return EXIT_SUCCESS; 
+}
